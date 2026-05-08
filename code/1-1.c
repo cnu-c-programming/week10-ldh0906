@@ -12,7 +12,7 @@ struct S2
     char c;
     int i;
     long long l;    
-} __attribbute__((packed));
+} __attribute__((packed));
 
 int main() {
     struct S1 s1;
