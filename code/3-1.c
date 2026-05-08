@@ -24,9 +24,7 @@ void add(Node n) {
 
 void delete(char name[]) {
     for(int i = 0; i < size; i++) {
-        // 문자열은 ==가 아니라 strcmp로 내용을 비교해야 한다.
         if(strcmp(arr[i].name, name) == 0) {
-            // 삭제한 위치 뒤의 값들을 한 칸씩 앞으로 당긴다.
             for(int j = i; j < size - 1; j++) {
                 arr[j] = arr[j + 1];
             }
